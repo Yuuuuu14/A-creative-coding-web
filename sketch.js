@@ -17,9 +17,9 @@ let counter = 0;
 let col1, col2;
 
 let canv;
-function preload() {
-  catImg = loadImage("cat.png");
-}
+// function preload() {
+//   catImg = loadImage("cat.png");
+// }
 function setup() {
  // cnv = createCanvas(400, 400);
   pg = select ('#p1');
@@ -55,7 +55,7 @@ function draw() {
   worm(70, 0, col1, col2);
   worm2(70, 0, col1, col2);
   counter += 0.01;
-  image(catImg, 35, 400, 200, 200);
+  // image(catImg, 35, 400, 200, 200);
 
 }
 
@@ -111,12 +111,12 @@ if (wormX > 370 || wormX <= 0) vX *= -1;
   }
  
 }
- function mousePressed() {
-  if (
-    mouseX > 35 && mouseX < 35 + 200 &&
-    mouseY > 400 && mouseY < 400 + 200
-  ) {
-    window.open("kitty.html"); 
-  }
-}
+//  function mousePressed() {
+//   if (
+//     mouseX > 35 && mouseX < 35 + 200 &&
+//     mouseY > 400 && mouseY < 400 + 200
+//   ) {
+//     window.open("kitty.html"); 
+//   }
+// }
 
